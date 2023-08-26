@@ -1,0 +1,30 @@
+.dubleproducts{
+    display: flex;
+    width: 100%;
+    /* max-height: 400px; */
+    min-width: 100px;
+}
+.dubleproducts__left{
+    padding-right: 40px;
+    padding-left: 20px;
+    max-width: 200px;
+}
+.dubleproducts__right{
+    max-width: 200px;
+}
+.dubleproducts__left img{
+    width: 100%;
+    max-height: 150px;
+    padding-right: 10px;
+}
+.dubleproducts__right img{
+    width: 100%;
+    max-height: 150px;
+    padding-left: 10px;
+}
+.dubleproducts__left p{
+    font-size:.8rem ;
+}
+.dubleproducts__right p{
+    font-size:.8rem ;
+}
