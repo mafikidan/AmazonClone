@@ -1,6 +1,7 @@
 import React from 'react'
 import "./Product.css"
 import { useStateValue } from '../../StateProvider'
+import Row from 'react-bootstrap/Row';
 
 function Product({id, title, image, price, rating}) {
   const [{ basket }, dispatch]= useStateValue()
@@ -19,6 +20,7 @@ function Product({id, title, image, price, rating}) {
   }
 
   return (
+    // <Row xs={1} md={2} className="g-2">
     <div className='product'>
       <div className='product__info'>
         <p>{title}</p>
@@ -31,12 +33,14 @@ function Product({id, title, image, price, rating}) {
             .fill()
             .map(()=>(
                 <p>🌟</p>
-            ))}            
+            ))}          
         </div>
+        
       </div>
-        <img src={image} alt='' />
+        <img src={image} alt=''  />
         <button onClick={addToBasket}>Add to Basket</button>
-    </div>
+      </div>
+      // </Row>
   )
 }
 
